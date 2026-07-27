@@ -1,5 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#FAFAFA",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "I DESIGN MAKER | Premium Signage, Digital Displays & Fabrication | Bengaluru",
@@ -15,23 +29,13 @@ export const metadata: Metadata = {
     siteName: "I DESIGN MAKER",
     title: "I DESIGN MAKER | Premium Signage & Fabrication | Bengaluru",
     description:
-      "Premium signage, digital displays, CNC laser cutting and fabrication company in Bengaluru. 1000+ projects, 500+ happy clients.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "I DESIGN MAKER - Premium Signage Company Bengaluru",
-      },
-    ],
+      "Premium signage, digital displays, CNC laser cutting and fabrication company in Bengaluru. 1500+ projects, 500+ happy clients.",
   },
   twitter: {
     card: "summary_large_image",
     title: "I DESIGN MAKER | Premium Signage & Fabrication",
     description: "Premium signage, digital displays, CNC laser cutting in Bengaluru.",
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#050505",
   robots: {
     index: true,
     follow: true,
@@ -86,14 +90,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body className="font-body antialiased">{children}</body>
+      <body className={`${inter.variable} font-body antialiased`}>{children}</body>
     </html>
   );
 }
