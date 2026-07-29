@@ -3,7 +3,7 @@
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/919686241411?text=Hi%20I%20Design%20Maker%2C%20I%20am%20interested%20in%20your%20services."
+      href="https://wa.me/919845572653?text=Hi%20I%20Design%20Maker%2C%20I%20am%20interested%20in%20your%20services."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-50 group"

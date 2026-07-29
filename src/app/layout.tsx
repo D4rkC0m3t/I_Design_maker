@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "I DESIGN MAKER | Premium Signage, Digital Displays & Fabrication | Bengaluru",
   description:
-    "I DESIGN MAKER – Bengaluru's leading signage, branding, digital display, CNC laser cutting and fabrication company. Premium end-to-end solutions for retail, corporate, hospitals, hotels & more. Call +91 96862 41411.",
+    "I DESIGN MAKER – Bengaluru's leading signage, branding, digital display, CNC laser cutting and fabrication company. Premium end-to-end solutions for retail, corporate, hospitals, hotels & more. Call +91 98455 72653.",
   keywords:
     "signage company bangalore, led signs bangalore, digital display bangalore, cnc laser cutting bangalore, acrylic letters bangalore, stainless steel letters, fabrication company bangalore, I Design Maker",
   authors: [{ name: "I Design Maker" }],
@@ -50,7 +50,7 @@ const schemaOrg = {
   description:
     "Premium signage, digital display, printing, fabrication, CNC and laser cutting company in Bengaluru, India.",
   url: "https://idesignmaker.in",
-  telephone: "+919686241411",
+  telephone: "+919845572653",
   address: {
     "@type": "PostalAddress",
     streetAddress: "1st Main Rd, Sharada Colony, BEML Layout, Kamakshipalya",

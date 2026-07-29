@@ -267,7 +267,7 @@ export default function ProjectsPage() {
                 Get Free Quote
               </Link>
               <a
-                href="https://wa.me/919686241411"
+                href="https://wa.me/919845572653"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-full text-[15px] font-semibold text-white border border-white/20 hover:bg-white/10 transition-colors"
