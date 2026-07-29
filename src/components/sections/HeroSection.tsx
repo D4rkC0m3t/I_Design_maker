@@ -161,21 +161,40 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Trust stats — big numbers */}
+          {/* Trust stats — dark glass pill cards */}
           <div
-            className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8 border-t border-white/10 pt-10"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
             style={{ animation: "fadeInUp 0.8s ease 0.8s both" }}
           >
             {[
               { num: "1500+", label: "Projects Delivered" },
-              { num: "500+", label: "Happy Clients" },
+              { num: "4.9★", label: "Google Rating" },
               { num: "72hr", label: "Quotation TAT" },
               { num: "12+", label: "States Served" },
             ].map((stat, i) => (
-              <div key={i} className="text-left">
-                <div className="font-display text-4xl lg:text-5xl text-white mb-2 leading-none">{stat.num}</div>
-                <div className="text-[11px] tracking-[0.15em] uppercase text-[#bbb] font-semibold">{stat.label}</div>
+              <div key={i} className="text-center bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-5">
+                <div className="font-display text-3xl lg:text-4xl text-white mb-1 leading-none">{stat.num}</div>
+                <div className="text-[10px] tracking-[0.15em] uppercase text-white/70 font-semibold">{stat.label}</div>
               </div>
+            ))}
+          </div>
+
+          {/* Certifications row */}
+          <div
+            className="flex flex-wrap items-center justify-center gap-2 mt-6"
+            style={{ animation: "fadeInUp 0.8s ease 0.9s both" }}
+          >
+            {[
+              "ISO 9001:2015 Certified",
+              "GST Registered",
+              "In-House Manufacturing",
+              "Professional Installation",
+              "Up to 5 Year Warranty",
+            ].map((cert) => (
+              <span key={cert} className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-3.5 py-1.5 text-[11px] font-semibold text-white/70">
+                <span className="text-[#FFB400]">✓</span>
+                {cert}
+              </span>
             ))}
           </div>
         </div>

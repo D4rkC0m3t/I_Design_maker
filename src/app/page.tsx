@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
-import TrustSection from "@/components/sections/TrustSection";
 import ClientLogosSection from "@/components/sections/ClientLogosSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import StickyQuoteButton from "@/components/StickyQuoteButton";
@@ -28,7 +27,6 @@ export default function Home() {
       <main className="overflow-x-hidden relative bg-white">
         <Navbar />
         <HeroSection />
-        <TrustSection />
         <ClientLogosSection />
         <AboutSection />
         <ServicesSection />
