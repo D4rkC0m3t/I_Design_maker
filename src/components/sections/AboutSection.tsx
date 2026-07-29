@@ -5,10 +5,10 @@ import Image from "next/image";
 import { useSmoothScroll } from "@/components/SmoothScroll";
 
 const stats = [
-  { num: 1500, suffix: "+", label: "Projects Completed", desc: "Delivered across India" },
-  { num: 500, suffix: "+", label: "Happy Clients", desc: "Trusted by top brands" },
-  { num: 10, suffix: "+", label: "Years Experience", desc: "Industry expertise" },
-  { num: 25, suffix: "+", label: "Cities Served", desc: "Pan-India presence" },
+  { num: 50000, suffix: "+", label: "Sq.Ft Material Processed", desc: "Annually in our facility" },
+  { num: 3000, suffix: "+", label: "Designs Created", desc: "Custom solutions delivered" },
+  { num: 500, suffix: "+", label: "Tons Metal Fabricated", desc: "CNC + laser precision" },
+  { num: 1200, suffix: "+", label: "Installations Done", desc: "Pan-India on-site" },
 ];
 
 export default function AboutSection() {
@@ -35,14 +35,15 @@ export default function AboutSection() {
                 <br />
                 Building Brands.
               </h2>
-              <p className="text-[#444] text-lg leading-relaxed mb-6">
-                I DESIGN MAKER delivers complete signage, digital display, branding, printing, and
-                fabrication solutions from our 10,000 sq.ft in-house manufacturing facility in Bengaluru.
+              <p className="text-[#333] text-lg leading-relaxed mb-4">
+                <strong className="text-[#111]">End-to-end signage &amp; branding partner.</strong> From
+                concept and 3D design through in-house manufacturing to pan-India installation —
+                we handle it all under one roof.
               </p>
-              <p className="text-[#666] text-base leading-relaxed mb-8">
-                With CNC, Laser, Powder Coating, and Acrylic fabrication machinery under one roof, we handle
-                everything from concept and 3D design to manufacturing and pan-India installation — ensuring
-                absolute quality control at every step.
+              <p className="text-[#444] text-base leading-relaxed mb-8">
+                Our 10,000 sq.ft Bengaluru facility is equipped with CNC routers, laser cutters, powder
+                coating lines, and acrylic fabrication machinery — giving us absolute quality control
+                over every project we deliver.
               </p>
 
               {/* Factory highlights */}
